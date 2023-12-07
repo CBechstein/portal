@@ -22,8 +22,10 @@
     <section id="wifi-settings">
         <h2>WLAN-Zugangsdaten Ihres Heimnetzwerks</h2>
         <input type="text" id="ssid" placeholder="WLAN-SSID (z.B. FRITZ!Box 1234 AB)">
-        <input type="password" id="password" placeholder="WLAN-Passwort">
-        <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+        <div class="password-container">
+            <input type="password" id="password" placeholder="WLAN-Passwort">
+            <i class="far fa-eye-slash" id="togglePassword"></i>
+        </div>
         <button id="submit">Bestätigen</button>
     </section>
 
@@ -31,6 +33,6 @@
         <p>&copy; 2023 C. Bechstein Digital GmbH</p>
     </footer>
 
-    <script src="script.js?version=1"></script>
+    <script src="script.js?version=1.0.1"></script>
 </body>
 </html>

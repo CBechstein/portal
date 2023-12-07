@@ -45,7 +45,28 @@ footer {
     color: #ad9761;
 }
 
-input[type="text"], input[type="password"] {
+.password-container {
+    position: relative;
+}
+
+#password {
+    padding: 10px;
+    padding-right: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: calc(100% - 22px);
+}
+
+#togglePassword {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+input[type="text"] {
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ddd;
