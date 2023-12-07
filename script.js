@@ -31,7 +31,7 @@ document.getElementById('scan-bluetooth').addEventListener('click', async () => 
             throw('Device does not support Bluetooth in browser.')
         }
         if (!navigator.bluetooth) {
-            alert('Unfortunately, your browser does not support Bluetooth. Please consider using Chrome.')
+            alert('Unfortunately, your browser does not support Bluetooth. Please consider using Google Chrome.')
             throw('Browser does not support Bluetooth.')
         }
         bluetoothDevice = await navigator.bluetooth.requestDevice(options);
